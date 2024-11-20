@@ -1,0 +1,36 @@
+name: laborator4
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.0.0 # Pentru gestionarea stării în Flutter
+  http: ^1.0.0 # Pentru apeluri HTTP
+  json_annotation: ^4.8.0 # Pentru lucrul cu JSON
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0 # Ultimele reguli de linting
+  build_runner: ^2.4.0 # Necesitat pentru generare cod (ex: JSON serialization)
+  json_serializable: ^6.7.0 # Pentru serializare JSON
+
+flutter:
+  assets:
+    - assets/data/wines.json
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/4.png
+    - assets/images/5.png
+    - assets/images/6.png
+    - assets/images/7.png
+
+  uses-material-design: true
